@@ -14,32 +14,61 @@ main {
 
 .info-container {
   color: white;
+  width: 26%;
+  margin-right: 100px;
+}
+
+h1 {
+  font-size: 49px;
+  /* line-height:2cm; */
+}
+
+.form-container {
+  width: 28%;
+}
+
+.form-banner {
+  font-size: 14px;
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  text-align: center;
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.15);
 }
 
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: white;
-  padding: 35px 35px 30px;
+  padding: 20px 35px 28px;
   border-radius: 10px;
+  min-height: 48vh;
+  margin-top: 30px;
 }
 
-input, button {
+input,
+button {
   font-family: inherit;
 }
 
 input {
-  margin-bottom: 20px;
-  padding: 13px;
+  margin: 5px 0px 20px;
+  padding: 14px;
   border-radius: 5px;
 }
 
 button {
+  margin-top: 10px;
   padding: 13px;
 }
 
 .form-termsofservice-text {
   color: hsl(246, 25%, 77%);
+  font-size: 12px;
+  margin: 15px 0px 0px;
+  text-align: center;
 }
 
 .termsofservice-span {
