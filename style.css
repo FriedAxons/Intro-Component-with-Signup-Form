@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  background-color: hsl(0, 100%, 74%);
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/bg-intro-desktop.png");
+}
+
+.info-container {
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 35px 35px 30px;
+  border-radius: 10px;
+}
+
+input, button {
+  font-family: inherit;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 13px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 13px;
+}
+
+.form-termsofservice-text {
+  color: hsl(246, 25%, 77%);
+}
+
+.termsofservice-span {
+  color: hsl(0, 100%, 74%);
+}
