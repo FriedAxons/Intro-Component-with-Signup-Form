@@ -26,32 +26,61 @@
         <p class="form-banner">
           <b>Try it free 7 days</b> then $20/mo. thereafter
         </p>
-        <form>
-          <input
-            type="text"
-            class="firstNameInput"
-            id=""
-            placeholder="First Name"
-          />
-          <input
-            type="text"
-            class="lastNameInput"
-            id=""
-            placeholder="Last Name"
-          />
-          <input
-            type="email"
-            class="emailInput"
-            id=""
-            placeholder="Email Address"
-          />
-          <input
-            type="password"
-            id=""
-            class="passwordInput"
-            placeholder="Password"
-          />
-          <button type="submit">CLAIM YOUR FREE TRIAL</button>
+        <form action="#">
+          <div class="input-group">
+            <input
+              type="text"
+              class="firstNameInput input"
+              id=""
+              placeholder="First Name"
+            />
+            <span class="icon"
+              ><img src="images/icon-error.svg" alt="Error icon"
+            /></span>
+            <p class="error-text">First Name cannot be empty</p>
+          </div>
+
+          <div class="input-group">
+            <input
+              type="text"
+              class="lastNameInput input"
+              id=""
+              placeholder="Last Name"
+            />
+            <span class="icon"
+              ><img src="images/icon-error.svg" alt="Error icon"
+            /></span>
+            <p class="error-text">Last Name cannot be empty</p>
+          </div>
+
+          <div class="input-group">
+            <input
+              type="email"
+              class="emailInput input"
+              id=""
+              placeholder="Email Address"
+              required
+            />
+            <span class="icon"
+              ><img src="images/icon-error.svg" alt="Error icon"
+            /></span>
+            <p class="error-text">Looks like this is not an email</p>
+          </div>
+
+          <div class="input-group">
+            <input
+              type="password"
+              id=""
+              class="passwordInput input"
+              placeholder="Password"
+            />
+            <span class="icon"
+              ><img src="images/icon-error.svg" alt="Error icon"
+            /></span>
+            <p class="error-text">Password cannot be empty</p>
+          </div>
+
+          <button type="submit" class="submitButton">CLAIM YOUR FREE TRIAL</button>
           <p class="form-termsofservice-text">
             By clicking the button, you are agreeing to our
             <span class="termsofservice-span">Terms and Services</span>
