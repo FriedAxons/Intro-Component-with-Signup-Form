@@ -144,10 +144,12 @@ button:hover {
 
 .termsofservice-span {
   color: hsl(0, 100%, 74%);
+  font-weight: 700;
 }
 
 @media (max-width: 375px) {
-  main, .form-container {
+  main,
+  .form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,7 +158,38 @@ button:hover {
 
   .info-container {
     margin: 0;
-    width: 80%;
+    width: 85%;
     text-align: center;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .info-container p {
+    font-size: 16px;
+  }
+
+  .form-banner {
+    width: 55vw;
+    padding: 20px 60px;
+  }
+
+  form {
+    width: 75vw;
+    max-height: 5vh;
+    padding: 15px 20px 20px;
+  }
+
+  .form-termsofservice-text {
+    font-size: 12px;
+    width: 90%;
+    padding-top: 15px;
+    margin-left: 12px;
+  }
+
+  .termsofservice-span {
+    font-weight: 700;
   }
 }
