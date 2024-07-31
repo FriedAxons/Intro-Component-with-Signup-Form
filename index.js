@@ -1,6 +1,5 @@
 document.getElementById("submitButton").addEventListener("click", function () {
   const inputs = document.querySelectorAll(".input");
-  const form = document.querySelector("form");
   let allValid = true;
   let invalidCount = 0;
 
@@ -65,22 +64,51 @@ function resetPlaceholder(input) {
 
 function adjustFormPadding(invalidCount) {
   const form = document.querySelector("form");
-  switch (invalidCount) {
-    case 0:
-      form.style.padding = "0px 35px 25px";
-      break;
-    case 1:
-      form.style.padding = "10px 35px 30px";
-      break;
-    case 2:
-      form.style.padding = "15px 35px 35px";
-      break;
-    case 3:
-      form.style.padding = "20px 35px 40px";
-      break;
-    case 4:
-      form.style.padding = "25px 35px 45px";
-      break;
+  const isMobile = window.matchMedia("(max-width: 375px)").matches;
+
+  if (isMobile) {
+    let topPadding, bottomPadding;
+    switch (invalidCount) {
+      case 0:
+        topPadding = "0px";
+        bottomPadding = "5px";
+        break;
+      case 1:
+        topPadding = "8px";
+        bottomPadding = "18px";
+        break;
+      case 2:
+        topPadding = "22px";
+        bottomPadding = "30px";
+        break;
+      case 3:
+        topPadding = "35px";
+        bottomPadding = "45px";
+        break;
+      case 4:
+        topPadding = "50px";
+        bottomPadding = "60px";
+        break;
+    }
+    form.style.padding = `${topPadding} 20px ${bottomPadding}`;
+  } else {
+    switch (invalidCount) {
+      case 0:
+        form.style.padding = "0px 35px 25px";
+        break;
+      case 1:
+        form.style.padding = "10px 35px 30px";
+        break;
+      case 2:
+        form.style.padding = "15px 35px 35px";
+        break;
+      case 3:
+        form.style.padding = "20px 35px 40px";
+        break;
+      case 4:
+        form.style.padding = "25px 35px 45px";
+        break;
+    }
   }
 }
 
