@@ -46,7 +46,7 @@ form {
   border-radius: 10px;
   min-height: 50vh;
   margin-top: 25px;
-  box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 7px 0px rgba(0, 0, 0, 0.15);
 }
 
 .input-group {
@@ -156,6 +156,10 @@ button:hover {
     justify-content: center;
   }
 
+  main {
+    background-image: url("images/bg-intro-mobile.png");
+  }
+
   .info-container {
     margin: 0;
     width: 85%;
@@ -173,13 +177,19 @@ button:hover {
 
   .form-banner {
     width: 55vw;
-    padding: 20px 60px;
+    padding: 20px 57px;
+    margin-top: 30px;
   }
 
   form {
     width: 75vw;
     max-height: 5vh;
-    padding: 15px 20px 20px;
+    padding: 0px 20px 5px;
+    margin: 8px 0px 60px;
+  }
+
+  input {
+    margin: 10px 0px 10px;
   }
 
   .form-termsofservice-text {
